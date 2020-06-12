@@ -1,0 +1,13 @@
+{
+  "name": "div-animeted",
+  "version": "1.0.0",
+  "description": "Animeted div using css",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "HállanCosta",
+  "license": "MIT"
+}

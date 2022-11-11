@@ -19,3 +19,5 @@
 **[Text Stroke RGB Effect](https://meek-marigold-1803c4.netlify.app)**
 
 **[Expand Div Animation](https://extraordinary-pony-10c0da.netlify.app)**
+
+**[Infinite Scroll Animation](https://lucent-daifuku-1c93d4.netlify.app)**

@@ -12,8 +12,10 @@
 
 **[Words FadeIn](https://amazing-toffee-f40da5.netlify.app)**
 
-**[Carousel Automatic](https://adorable-phoenix-5de297.netlify.app/)**
+**[Carousel Automatic](https://adorable-phoenix-5de297.netlify.app)**
 
-**[Menu Hamburger Animation](https://zingy-pie-183c40.netlify.app/)**
+**[Menu Hamburger Animation](https://zingy-pie-183c40.netlify.app)**
 
 **[Text Stroke RGB Effect](https://meek-marigold-1803c4.netlify.app)**
+
+**[Expand Div Animation](https://extraordinary-pony-10c0da.netlify.app)**

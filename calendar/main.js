@@ -1,64 +1,61 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const monthsBR = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
-    const tableDays = document.getElementById('dias');
+    var monthsBR = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+    var tableDays = document.getElementById('days');
 
-    function GetDaysCalendar(mes, ano) {
-        document.getElementById('mes').innerHTML = monthsBR[mes];
-        document.getElementById('ano').innerHTML = ano;
-        console.log(monthsBR[mes]);
+    function GetDaysCalendar(month, year) {
+        document.getElementById('month').innerHTML = monthsBR[month];
+        document.getElementById('year').innerHTML = year;
 
-        let firstDayOfWeek = new Date(ano, mes, 1).getDay() - 1;
-        let getLastDayThisMonth = new Date(ano, mes + 1, 0).getDate();
-        console.log('firstDayOfWeek:', firstDayOfWeek);
+        var firstDayOfWeek = new Date(year, month, 1).getDay() - 1;
+        var getLastDayThisMonth = new Date(year, month + 1, 0).getDate();
 
         for (var i = -firstDayOfWeek, index = 0; i < (35 - firstDayOfWeek); i++, index++) {
-            let dt = new Date(ano, mes, i);
-            let dtNow = new Date();
-            let dayTable = tableDays.getElementsByTagName('td')[index];
-            dayTable.classList.remove('mes-anterior');
-            dayTable.classList.remove('proximo-mes');
-            dayTable.classList.remove('dia-atual');
+            var dt = new Date(year, month, i);
+            var dtNow = new Date();
+            var dayTable = tableDays.getElementsByTagName('td')[index];
+            dayTable.classList.remove('prev-month');
+            dayTable.classList.remove('next-month');
+            dayTable.classList.remove('current-day');
             dayTable.innerHTML = dt.getDate();
 
-
             if (dt.getFullYear() == dtNow.getFullYear() && dt.getMonth() == dtNow.getMonth() && dt.getDate() == dtNow.getDate()) {
-                dayTable.classList.add('dia-atual');
+                dayTable.classList.add('current-day');
             }
 
             if (i < 1) {
-                dayTable.classList.add('mes-anterior');
+                dayTable.classList.add('prev-month');
             } 
             
             if (i > getLastDayThisMonth) {
-                dayTable.classList.add('proximo-mes');
+                dayTable.classList.add('next-month');
             }
         }
     }
 
-    let now = new Date();
-    let mes = now.getMonth();
-    let ano = now.getFullYear();
+    var now = new Date();
+    var month = now.getMonth();
+    var year = now.getFullYear();
 
     GetDaysCalendar(0, 2023);
 
-    const botao_proximo = document.getElementById('btn-pro');
-    const botao_anterior = document.getElementById('btn-ant');
+    var btnNext = document.getElementById('btn-next');
+    var btnPrev = document.getElementById('btn-prev');
 
-    botao_proximo.onclick = function() {
-        mes++;
-        if (mes > 11) {
-            mes = 0;
-            ano++;
+    btnNext.onclick = function() {
+        month++;
+        if (month > 11) {
+            month = 0;
+            year++;
         }
-        GetDaysCalendar(mes, ano);
+        GetDaysCalendar(month, year);
     } 
     
-    botao_anterior.onclick = function() {
-        mes--;
-        if (mes < 0) {
-            mes = 11;
-            ano--;
+    btnPrev.onclick = function() {
+        month--;
+        if (month < 0) {
+            month = 11;
+            year--;
         }
-        GetDaysCalendar(mes, ano);
+        GetDaysCalendar(month, year);
     }  
 });

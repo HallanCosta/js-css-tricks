@@ -10,28 +10,28 @@ body {
     background-color: #f1f1f1;
 }
 
-.conteudo {
+.content {
     left: 50%;
     margin: 0 0 0 -250px;
     position: absolute;
     width: 500px;
 }
 
-.calendario {
+.calendar {
     text-align: center;
 }
 
-.conteudo .calendario header {
+.content .calendar header {
     position: relative;
 }
 
-h2 {
+.month {
     margin-top: 20px;
     font-size: 32px;
     text-transform: uppercase;
 }
 
-.btn-ant, .btn-pro {
+.btn-prev, .btn-next {
     position: absolute;
     top: 50%;
     height: 32px;
@@ -47,57 +47,57 @@ h2 {
     text-decoration: none;
 }
 
-.btn-ant {
+.btn-prev {
     left: 80px;
 }
 
-.btn-pro {
+.btn-next {
     right: 80px;
 }
 
-.btn-ant:hover .btn-pro:hover {
+.btn-prev:hover .btn-next:hover {
     background-color: #cbd1d2;
     color: #f9f9f9;
 }
 
-.calendario table {
+.calendar table {
     margin-top: 20px;
     border-collapse: collapse;
 }
 
-.calendario thead {
+.calendar thead {
     background-color: white;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.calendario td {
+.calendar td {
     border: 1px solid #cbd1d2;
     height: 71.4px;
     text-align: center;
     width: 71.4px;
 }
 
-.calendario tbody td {
+.calendar tbody td {
     cursor: pointer;
     position: relative;
 }
 
-.calendario tbody td:hover {
+.calendar tbody td:hover {
     background: rgba(0, 173, 223, 0.8);
     color: #f9f9f9;
 }
 
-.calendario table .dia-atual {
+.calendar table .current-day {
     background-color: #00addf;
     color: #f9f9f9;
 }
 
-.calendario .mes-anterior, .calendario .proximo-mes {
+.calendar .prev-month, .calendar .next-month {
     color: #cbd1d2;
 }
 
-.calendario .mes-anterior:hover, .calendario .proximo-mes:hover {
+.calendar .prev-month:hover, .calendar .next-month:hover {
     background-color: #98a0a0;
 }
 
@@ -118,6 +118,6 @@ h2 {
     background-color: #f9f9f9;
 }
 
-.event.dia-atual:after {
+.event.current-day:after {
     background-color: #f9f9f9;
 }

@@ -22,4 +22,6 @@
 
 **[Infinite Scroll Animation](https://lucent-daifuku-1c93d4.netlify.app)**
 
-**[Calendar](https://dashing-tiramisu-68bd97.netlify.app/)**
+**[Calendar - Carousel](https://dashing-tiramisu-68bd97.netlify.app/)**
+
+**[Calendar - Vertical](https://thunderous-sunshine-5ac4e8.netlify.app/)**

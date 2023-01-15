@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    padding: 100px 0;
+
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Calendário */
+.calendars::-webkit-scrollbar { 
+    height: 10px; 
+}
+
+.calendars::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vw;
+}
+
+.calendars::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 100vw;
+}
+
+.calendars::-webkit-scrollbar-thumb:hover { 
+    background-color: #333; 
+}
+
+.calendars {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    flex: 1;
+
+    width: 100%;
+
+    max-height: 400px;
+}
+
+.calendar {
+    flex: none;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.calendar.first {
+    margin-top: 0;
+}
+
+.content .calendar header {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.year, .month {
+    font-size: 18px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.calendar table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.calendar td {
+    height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.calendar .week {
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.calendar .week td {
+    font-weight: 500;
+}
+
+.calendar .days td {
+    cursor: pointer;
+    position: relative;
+    font-weight: 400;
+
+    border-radius: 10px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.calendar .days td[selected] {
+    background-color: #27c527;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.calendar .days td[selected].event::after {
+    background-color: #ffffff;
+}
+
+.calendar .days td[disabled] {
+    cursor: not-allowed;
+}
+
+.calendar tbody td:hover {
+    background-color: rgba(0, 173, 223, 0.8);
+    color: #f9f9f9;
+}
+
+.calendar table .current-day {
+    background-color: #00addf;
+    color: #f9f9f9;
+
+    transition: all 200ms ease-in-out;
+}
+
+.calendar .prev-month, .calendar .next-month {
+    color: #dedede;
+    
+    transition: all 200ms ease-in-out;
+}
+
+.calendar .prev-month:hover, .calendar .next-month:hover {
+    background-color: transparent;
+    color: #dedede;
+
+    cursor: default;
+}
+
+.event:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background-color: #00addf;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.event:hover:after {
+    background-color: #f9f9f9;
+}
+
+.event.current-day:after {
+    background-color: #f9f9f9;
+}

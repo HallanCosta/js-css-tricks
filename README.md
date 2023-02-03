@@ -27,3 +27,5 @@
 **[Calendar - Vertical](https://thunderous-sunshine-5ac4e8.netlify.app/)**
 
 **[Calendar - Reserve](https://fancy-elf-bc82d6.netlify.app)**
+
+**[Input Text Search Map - Integration Mapbox](https://willowy-nougat-832b1c.netlify.app/)**

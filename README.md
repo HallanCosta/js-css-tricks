@@ -29,3 +29,6 @@
 **[Calendar - Reserve](https://fancy-elf-bc82d6.netlify.app)**
 
 **[Input Text Search Map - Integration Mapbox](https://willowy-nougat-832b1c.netlify.app/)**
+
+Alternative of LocalStorage
+**[LocalForage](https://regal-paprenjak-b8e85c.netlify.app/)**

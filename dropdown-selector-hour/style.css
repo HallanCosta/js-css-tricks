@@ -1,0 +1,76 @@
+.input-time-selector-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#input-time {
+    -moz-appearance: none;
+    appearance: none;
+
+    display: block;
+    margin-top: 10px;
+
+    font-size: 20px;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#input-time::-webkit-clear-button,
+#input-time::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+#hour-picker {
+    overflow-y: scroll;
+    position: relative;
+    
+    height: 100px;
+    width: 100%;
+}
+
+#hour-picker::-webkit-scrollbar { 
+    display: none;
+    height: 0px; 
+    padding: 0;
+}
+            
+#hour-picker::-webkit-scrollbar-thumb {
+    padding: 0;
+    display: none;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+.hour {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+
+    padding: 10px 20px;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.hour:hover {
+    background-color: lightgray;
+}
+
+.hour.selected {
+    background-color: lightgray;
+}

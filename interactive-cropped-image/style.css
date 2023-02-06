@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 600px;
+    margin: 0 auto;
+
+    padding: 70px 0;
+}
+
+#dummy-img {
+    border-radius: 50%;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#input-file {
+    margin-top: 40px;
+}
+
+.croppie-container {
+    width: fit-content;
+}
+
+#croppie {
+    width: fit-content;
+}
+
+.croppie-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0 20px;
+    justify-content: center;
+}
+
+.croppie-buttons button {
+    cursor: pointer;
+}
+
+canvas {
+    cursor: pointer;
+}

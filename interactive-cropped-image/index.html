@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Interactive Crop Image</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- Blueimp-load-image.js -->
+    <script src="https://cdn.jsdelivr.net/npm/blueimp-load-image@2.20.1/js/load-image.all.min.js"></script>
+
+    <!-- Croppie.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Clique para seleciona uma imagem</h2>
+        <input type="file" class="form-control" id="input-file" hidden>
+
+        <img id="dummy-img" src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=200&txt_altura=200&extensao=png&fundo_r=0&fundo_g=0&fundo_b=0&texto_r=0&texto_g=0&texto_b=0&texto=&tamanho_fonte=10" alt="imagem" />
+
+        <div class="croppie-container" hidden>
+            <div id="croppie"></div>
+            <div class="croppie-buttons">
+                <button class="btn-cancel-crop">Cancel</button>
+                <button class="btn-apply-crop">Apply</button>
+            </div>
+        </div>
+
+        <div id="portrait-cropped" hidden></div>
+    </div>
+        
+    <script src="main.js"></script>
+<body>
+
+</html>

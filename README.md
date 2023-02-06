@@ -32,3 +32,5 @@
 
 Alternative of LocalStorage
 **[LocalForage](https://regal-paprenjak-b8e85c.netlify.app/)**
+
+**[Interactive Cropped Image](https://playful-kelpie-ec5312.netlify.app/)**

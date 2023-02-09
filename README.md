@@ -36,3 +36,5 @@ Alternative of LocalStorage
 **[Interactive Cropped Image](https://playful-kelpie-ec5312.netlify.app/)**
 
 **[Dropdown Selector Hour](https://visionary-babka-886d8e.netlify.app/)**
+
+**[Dropdown Select Multiple Items](https://ubiquitous-travesseiro-3ecc44.netlify.app/)**

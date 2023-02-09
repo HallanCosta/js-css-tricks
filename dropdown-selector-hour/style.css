@@ -3,37 +3,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 480px;
 }
 
-#input-time {
-    -moz-appearance: none;
-    appearance: none;
+.btn-hour {
+    font-size: 50px;
+    margin: 0; /* reseta h2 */
 
-    display: block;
-    margin-top: 10px;
-
-    font-size: 20px;
-
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#input-time::-webkit-clear-button,
-#input-time::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    display: none;
-}
-
-input[type="time"]::-webkit-calendar-picker-indicator {
-    display: none;
+    text-align: center;
 }
 
 #hour-picker {
     overflow-y: scroll;
     position: relative;
     
-    height: 100px;
+    height: 200px;
     width: 100%;
 }
 
@@ -61,7 +47,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border-bottom: 1px solid gray;
     font-size: 20px;
 
-    padding: 10px 20px;
+    padding: 15px 0px;
     width: 100%;
 
     cursor: pointer;

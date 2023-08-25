@@ -38,3 +38,5 @@ Alternative of LocalStorage
 **[Dropdown Selector Hour](https://fanciful-faloodeh-dc1d92.netlify.app/)**
 
 **[Dropdown Select Multiple Items](https://warm-jalebi-2379b3.netlify.app/)**
+
+**[Timer - Fake realtime (Cronômetro)](https://splendid-biscuit-d07e9b.netlify.app/)**

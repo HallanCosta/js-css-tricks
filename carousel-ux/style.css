@@ -1,0 +1,90 @@
+ /* Estilo geral do carousel */
+ .carouselux-container .carouselux-inner {
+  position: relative;
+  max-width: 1350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carouselux-container .carouselux-inner .carouselux-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselux-container .carouselux-inner .carouselux-wrapper .carouselux-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  justify-content: flex-start; /* Alinhado ao início */
+}
+
+.carouselux-container .carouselux-inner .carouselux-wrapper .carouselux-track .carouselux-item {
+  min-width: 600px;
+  height: 444px;
+  background: #457C1F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Evita que os itens encolham */
+  cursor: grab;
+}
+
+/* Adiciona transparência no item parcialmente visível */
+.carouselux-container .carouselux-inner .carouselux-wrapper .carouselux-track .carouselux-item.partial-visible {
+  opacity: 0.5;
+}
+
+/* Botões de navegação */
+.carouselux-container .carouselux-inner .carouselux-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carouselux-container .carouselux-inner .carouselux-btn.prev-btn {
+  left: 10px;
+}
+
+.carouselux-container .carouselux-inner .carouselux-btn.next-btn {
+  right: 10px;
+}
+
+.carouselux-container .bullets {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carouselux-container .bullets .bullet {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carouselux-container .bullets .bullet.current {
+  background-color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carouselux-item {
+    min-width: 80%;
+  }
+}
